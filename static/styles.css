@@ -162,4 +162,16 @@ body::before {
     z-index: 1000; /* Ensure it is above other elements */
 }
 
+.project-name {
+    color: black;
+}
+
+.carousel-indicators button {
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
 

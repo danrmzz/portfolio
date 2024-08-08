@@ -87,7 +87,6 @@ body::before {
 .ucf:hover {
     color: rgb(201, 201, 201);
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
-
 }
 
 
@@ -164,7 +163,16 @@ body::before {
 
 .project-name {
     color: black;
+
 }
+
+.project-name:hover {
+    color: rgb(49, 49, 49);
+}
+
+
+
+
 
 .carousel-indicators button {
     filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);

@@ -105,7 +105,8 @@ body * {
     
 
 }
- .ucf {
+
+.ucf {
     font-weight: bold;
     font-size: 25px;
     background-image: linear-gradient(to bottom, #ffffff, #b1b1b1); /* Top-down gradient colors */
@@ -114,4 +115,24 @@ body * {
     background-clip: text; /* For Firefox */
     color: transparent;
     margin: 0px;
- }
+}
+
+
+.carousel-container {
+    width: 20%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the carousel */
+}
+.carousel-inner img {
+    width: 100%; /* Ensure images fit within the carousel */
+    height: auto; /* Maintain aspect ratio */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; /* Adjust the width of the control buttons */
+}
+
+
+
+
+
+

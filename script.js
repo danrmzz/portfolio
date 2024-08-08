@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const words = ["student", "developer", "programmer", "enthusiast"];
+    const words = ["student", "developer", "problem solver", "dreamer", "engineer", "great guy", "innovator"];
     let i = 0;
     let timer;
 

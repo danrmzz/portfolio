@@ -4,12 +4,12 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: hidden; /* Prevent scrolling */
-    font-family: Poppins, 'Courier New', Courier, monospace;
+    font-family: Poppins !important;
 }
 
 body {
     position: relative;
-    background-image: url('imgs/galaxy.gif');
+    background-image: url('../static/imgs/galaxy.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,18 +22,82 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('imgs/galaxy.gif');
+    background-image: url('../static/imgs/galaxy.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(5px); /* Adjust the blur radius as needed */
-    z-index: 1;
+    z-index: -1;
+
 }
 
-body * {
-    position: relative;
-    z-index: 2;
+.carousel-container {
+    width: 45%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the carousel */
+    margin-top: 40px;
 }
+
+.carousel-inner img {
+    width: 100%; /* Ensure images fit within the carousel */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; /* Adjust the width of the control buttons */
+}
+
+
+.about-me {
+    display: block;
+
+}
+
+.intro {
+    display: inline;
+    font-size: 60px; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: make text bold */
+    color: rgb(233, 233, 233);
+    
+    
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 25px;
+    color: rgb(168, 168, 168);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
+    
+
+}
+
+.hi {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
+
+}
+
+
+.ucf {
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(168, 168, 168);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
+}
+
+.ucf:hover {
+    color: rgb(201, 201, 201);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
+
+}
+
+
+
+.main {
+    position: relative; /* Ensure the parent container is positioned */
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
 
 @keyframes typing {
     from { width: 0; }
@@ -44,95 +108,58 @@ body * {
     50% { border-color: transparent; }
 }
 
-.dynamic-text {
-    font-size: 25px; /* Adjust as needed */
-    font-weight: 400;
-    background-image: linear-gradient(to bottom, #ffffff, #b1b1b1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    white-space: nowrap;
-    overflow: hidden;
-}
+
 
 #changing-text {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid #fff;
+    border-right: 2px solid rgb(233, 233, 233);
     animation: blink 0.7s infinite step-end alternate;
 
     display: inline;
-    font-size: 68px; /* Adjust font size as needed */
+    font-size: 60px; /* Adjust font size as needed */
     font-weight: bold; /* Optional: make text bold */
-    background-image: linear-gradient(to bottom, #ffffff, #b1b1b1); /* Top-down gradient colors */
+    background-image: linear-gradient(to bottom, #766ee4, #473fb4); /* Top-down gradient colors */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; /* For Firefox */
     color: transparent;
 }
 
-
-
-
-
-.about-me {
-    display: block;
+.socials-links {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 20px 0px;
+    margin-right: 7px;
+    border-radius: 100px;
+    padding: 10px 27px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
-.intro {
-    display: inline;
-    font-size: 68px; /* Adjust font size as needed */
-    font-weight: bold; /* Optional: make text bold */
-    background-image: linear-gradient(to bottom, #ffffff, #b1b1b1); /* Top-down gradient colors */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; /* For Firefox */
-    color: transparent;
-    
+.socials-links:hover {
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255) !important;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+    transition: 0.2s ease-in-out;
 }
 
-.desc {
-    font-weight: 400px;
-    font-size: 25px;
-    background-image: linear-gradient(to bottom, #ffffff, #b1b1b1); /* Top-down gradient colors */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; /* For Firefox */
-    color: transparent;
-    margin: 0px;
-    
+.logo {
+    width: 25px;
+    height: auto;
+  }
 
+  .btn-home {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it is above other elements */
 }
-
-.ucf {
-    font-weight: bold;
-    font-size: 25px;
-    background-image: linear-gradient(to bottom, #ffffff, #b1b1b1); /* Top-down gradient colors */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; /* For Firefox */
-    color: transparent;
-    margin: 0px;
-}
-
-
-.carousel-container {
-    width: 20%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the carousel */
-}
-.carousel-inner img {
-    width: 100%; /* Ensure images fit within the carousel */
-    height: auto; /* Maintain aspect ratio */
-}
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%; /* Adjust the width of the control buttons */
-}
-
-
-
-
 
 

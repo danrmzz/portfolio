@@ -116,6 +116,11 @@
 
 @media (max-width: 766px) {
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .about-me p,
     .about-me span,
     .about-me h1,
@@ -182,6 +187,11 @@
 
 @media (max-width: 524px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .project-name h5{
         font-size: 16px !important;
     }
@@ -196,6 +206,11 @@
 
 @media (max-width: 500px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .intro span{
         font-size: 185% !important;
     }
@@ -205,6 +220,11 @@
 }
 
 @media (max-width: 494px) { 
+
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
     .project-name h5{
         font-size: 15px !important;
@@ -216,7 +236,12 @@
 
 }
 
-@media (max-width: 465px) { 
+@media (max-width: 465px) {
+    
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
     .project-name h5{
         font-size: 14px !important;
@@ -231,6 +256,11 @@
 
 @media (max-width: 450px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .intro span{
         font-size: 175% !important;
     }
@@ -239,6 +269,11 @@
 
 
 @media (max-width: 435px) { 
+
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
     .project-name h5{
         font-size: 13px !important;
@@ -251,6 +286,11 @@
 }
 
 @media (max-width: 430px) { 
+
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
 
     .about-me p,
@@ -277,6 +317,11 @@
 
 @media (max-width: 410px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .intro span{
         font-size: 145% !important;
     }
@@ -284,6 +329,11 @@
 }
 
 @media (max-width: 406px) { 
+
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
     .project-name h5{
         font-size: 12px !important;
@@ -299,6 +349,11 @@
 
 @media (max-width: 377px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .project-name h5{
         font-size: 11px !important;
         margin-bottom: 0px !important;
@@ -313,6 +368,11 @@
 
 @media (max-width: 370px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .intro span{
         font-size: 125% !important;
     }
@@ -320,7 +380,12 @@
 }
 
 
-@media (max-width: 347px) { 
+@media (max-width: 347px) {
+    
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
     .project-name h5{
         font-size: 10px !important;
@@ -336,6 +401,11 @@
 
 
 @media (max-width: 330px) { 
+
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
     .about-me p,
     .about-me span,
@@ -367,6 +437,11 @@
 
 @media (max-width: 318px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .project-name h5{
         font-size: 10px !important;
         margin-bottom: 0px !important;
@@ -389,6 +464,11 @@
 
 @media (max-width: 300px) { 
 
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
+
     .intro span{
         font-size: 115% !important;
     }
@@ -405,6 +485,11 @@
 
 
 @media (max-width: 290px) { 
+
+    html, body {
+        overflow: auto; /* Prevent scrolling */
+
+    }
 
     .intro span{
         font-size: 105% !important;

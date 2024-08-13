@@ -3,8 +3,8 @@
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Prevent scrolling */
     font-family: Poppins !important;
+    overflow: aut;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed; /* Fixed position to stay in place while scrolling */
     top: 0;
     left: 0;
     right: 0;
@@ -26,178 +26,250 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    filter: blur(5px); /* Adjust the blur radius as needed */
-    z-index: -1;
-
+    filter: blur(5px); /* Apply blur effect */
+    z-index: -1; /* Ensure it stays behind other content */
 }
-
-.carousel-container {
-    width: 45%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the carousel */
-    margin-top: 40px;
-}
-
-.carousel-inner img {
-    width: 100%; /* Ensure images fit within the carousel */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%; /* Adjust the width of the control buttons */
-}
-
-
-.about-me {
-    display: block;
-
-}
-
-.intro {
-    display: inline;
-    font-size: 60px; /* Adjust font size as needed */
-    font-weight: bold; /* Optional: make text bold */
-    color: rgb(233, 233, 233);
-    
-    
-}
-
-.desc {
-    font-weight: 300;
-    font-size: 25px;
-    color: rgb(168, 168, 168);
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
-    
-
-}
-
-.hi {
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
-
-}
-
-
-.ucf {
-    font-weight: 500;
-    font-size: 25px;
-    color: rgb(168, 168, 168);
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
-}
-
-.ucf:hover {
-    color: rgb(201, 201, 201);
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); 
-}
-
-
 
 .main {
-    position: relative; /* Ensure the parent container is positioned */
-    margin-top: 70px;
-    margin-bottom: 90px;
+    position: relative;
+    margin-top: 200px;
+    height: 100vh;
+    
+}
+
+.about-me {
+    margin-bottom: 75px;
 }
 
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+.intro1, .intro2 {
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-
-
-#changing-text {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid rgb(233, 233, 233);
-    animation: blink 0.7s infinite step-end alternate;
-
-    display: inline;
-    font-size: 60px; /* Adjust font size as needed */
-    font-weight: bold; /* Optional: make text bold */
-    background-image: linear-gradient(to bottom, #766ee4, #473fb4); /* Top-down gradient colors */
+.name {
+    font-size: 100px;
+    font-weight: 500;
+    background: linear-gradient(to right, #975fff, #625fff, #5fb7ff, #5fdfff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; /* For Firefox */
-    color: transparent;
 }
 
-.socials-links {
-    display: inline-block;
-    text-decoration: none;
+.gradient-border-button-1 {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
     color: white;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0);
-    margin: 20px 0px;
-    margin-top: 11px;
-    margin-right: 7px;
-    border-radius: 100px;
-    padding: 10px 27px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: 0.2s ease;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.1);
+    background-color: black; /* Black background */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid transparent; /* Border that will be filled by gradient */
+    background-image: linear-gradient(black, black), linear-gradient(45deg, #755de2, #3981e6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box; /* Clip background to show gradient border */
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.1s ease-in-out;
 }
 
-.socials-links:hover {
-    background-color: transparent;
-    border: 1px solid rgb(255, 255, 255) !important;
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+.gradient-border-button-2 {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: black; /* Black background */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid transparent; /* Border that will be filled by gradient */
+    background-image: linear-gradient(black, black), linear-gradient(45deg, #3981e6, #755de2);
+    background-origin: border-box;
+    background-clip: padding-box, border-box; /* Clip background to show gradient border */
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.1s ease-in-out;
 }
+
+.gradient-border-button-3 {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(45deg, #755de2, #3981e6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.1s ease-in-out;
+}
+.gradient-border-button-1 img,
+.gradient-border-button-2 img,
+.gradient-border-button-3 img {
+    margin-right: 10px;
+    height: 24px;
+}
+
+
+.gradient-border-button-1:hover, .gradient-border-button-2:hover, .gradient-border-button-3:hover {
+
+    transform: scale(1.05);
+}
+
+.buttons {
+    margin-bottom: 275px;
+}
+
+/* Navbar */
+
+.narbar {
+    padding: 15px 18px !important;
+}
+
+nav {
+    padding-top: 20px !important;
+}
+
+
 
 .logo {
-    width: 25px;
-    height: auto;
-  }
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.848) !important;
+}
 
-  .btn-home {
+.nav-item {
+    margin: 0px 10px;
+}
+
+.nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    
+}
+
+.nav-link::after {
+    content: '';
     position: absolute;
-    top: 0px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    z-index: 1000; /* Ensure it is above other elements */
+    bottom: -1px;
+    left: 0px;
+    background-color: #4b80c5;
+    width: 0%;
+    height: 3px;
+    transition: 0.4s ease-in-out;
 }
 
-.project-name {
-    color: black;
-
+.nav-item:hover .nav-link::after {
+    width: 100%;
 }
 
-.project-name:hover {
-    color: rgb(49, 49, 49);
+.nav-link:hover {
+    color: #76aef8 !important;
 }
 
-.project-name-light {
-    color: rgb(212, 212, 212);
+.fa-solid {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
 }
 
-.project-name-light:hover {
-    color: rgb(168, 168, 168);
+/* Experiences */
+
+.experience-container {
+    display: flex;
+    height: 100vh;
 }
 
-
-
-
-
-.carousel-indicators button {
-    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);
-    transition: filter 0.5s ease;
+.sidebar {
+    width: 250px; /* Fixed sidebar width */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.carousel-indicators button.no-filter {
-    filter: none;
-    transition: filter 0.5s ease;
+.sidebar h2 {
+    font-weight: 200;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1);
-    transition: filter 0.5s ease;
+.navbar-e {
+    position: relative;
+    flex-grow: 1;
 }
 
+.navbar-e:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: #555;
+    transition: all 0.3s ease; /* Smooth transition */
+}
 
+.navbar-item {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #aaa;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    background-color: transparent; /* Initial background color */
+    width: 100%; /* Make the navbar items take up the full width */
+    box-sizing: border-box; /* Ensure padding is included within the width */
+}
+
+.navbar-item:hover, .navbar-item.active {
+    color: #fff;
+    background-color: #33333373; /* Gray background on hover/click */
+}
+
+.navbar-item.active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #fff;
+    transition: top 0.3s ease, bottom 0.3s ease; /* Smooth transition */
+}
+
+.experience-content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.experience-detail {
+    display: none;
+}
+
+.experience-detail.active {
+    display: block;
+}
+
+h2, p, ul, li {
+    color: #fff;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+}

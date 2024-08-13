@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('selfbook').classList.add('active');
     document.querySelector('.navbar-item').classList.add('active');
 });
+

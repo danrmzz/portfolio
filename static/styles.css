@@ -193,10 +193,12 @@ nav {
 }
 
 .sidebar {
-    width: 250px; /* Fixed sidebar width */
+    width: 300px; /* Fixed sidebar width */
     padding: 20px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
 .sidebar h2 {
@@ -205,6 +207,22 @@ nav {
     padding-bottom: 20px;
     font-size: 30px;
     color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.experience-content h2, .experience-content p {
+    color: rgba(255, 255, 255, 0.945);
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.experience-content h2 {
+    margin-bottom: 20px;
+}
+
+.location {
+    color: #3981e6 !important;
+    margin-bottom: 20px !important;
 }
 
 .navbar-e {
@@ -219,13 +237,14 @@ nav {
     bottom: 0;
     left: 0;
     width: 2px;
+    height: 180px;
     background-color: #555;
     transition: all 0.3s ease; /* Smooth transition */
 }
 
 .navbar-item {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     padding: 15px 20px;
     cursor: pointer;
     color: #aaa;
@@ -237,7 +256,7 @@ nav {
 }
 
 .navbar-item:hover, .navbar-item.active {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.925);
     background-color: #33333373; /* Gray background on hover/click */
 }
 
@@ -259,17 +278,52 @@ nav {
 
 .experience-detail {
     display: none;
+    position: relative;
+    
 }
 
 .experience-detail.active {
     display: block;
+    position: relative;
 }
 
-h2, p, ul, li {
-    color: #fff;
+.experience-container ul, .experience-container li {
+    color: rgba(255, 255, 255, 0.932) !important;
+    font-weight: 200 !important;
+    margin-bottom: 15px !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
 .date {
-    color: #888;
-    font-size: 14px;
+    color: #b3b3b3 !important;
+    font-size: 14px !important;
+    position: absolute !important; /* Position the date absolutely within the parent container */
+    top: 0 !important; /* Align to the top */
+    right: 0 !important; /* Align to the right */
+
 }
+
+.company {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    position: absolute !important; /* Position the date absolutely within the parent container */
+    bottom: 4 !important; /* Align to the top */
+    right: 4 !important; /* Align to the right */
+    
+}
+
+.funspot {
+    width: 50px;
+    height: auto;
+    position: absolute !important; /* Position the date absolutely within the parent container */
+    bottom: 10 !important; /* Align to the top */
+    right: 4 !important; /* Align to the right */
+    border-radius: 0% !important;
+
+}
+
+#experience {
+    scroll-margin-top: 30vh; /* Adjust this value as needed */
+}
+

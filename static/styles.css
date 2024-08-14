@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 
 body::before {
@@ -406,6 +407,7 @@ nav {
     outline: none;
     text-decoration: none;
     margin-right: 10px;
+    margin-bottom: 10px;
     transition: all 0.1s ease-in-out;
 }
 .live-demo-button img{

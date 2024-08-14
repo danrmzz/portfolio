@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+
+    body {
+        background-attachment: scroll;
+    }
+    .experience-content p, .experience-content ul {
+        font-size: 90%;
+    }
+
+    .date {
+        font-size: 80% !important;
+    }
+
+    .experience-content h2 {
+        font-size: 150% !important;
+    }
+
+    
+}

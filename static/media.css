@@ -37,6 +37,10 @@
 
 @media (max-width: 767px) {
 
+    .about-me {
+        margin-top: -90px;
+    }
+
     #experience {
         scroll-margin-top: 10vh; /* Adjust this value as needed */
     }

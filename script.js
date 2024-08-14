@@ -59,5 +59,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 
   if (/Mobi|Android/i.test(navigator.userAgent)) {
-    document.body.style.backgroundAttachment = 'fixed';
+    document.body.style.backgroundImage = 'none';
+    document.body.style.backgroundColor = '#000';
 }

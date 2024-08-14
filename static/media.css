@@ -121,7 +121,9 @@
         gap: 20px; /* Maintain spacing between the cards */
     }
 
-
+    .projects-section {
+        margin-top: -10px !important;
+    }
     
     .experience-container {
         margin-top: -50px !important;

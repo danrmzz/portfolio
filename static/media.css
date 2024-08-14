@@ -121,6 +121,13 @@
         gap: 20px; /* Maintain spacing between the cards */
     }
 
+    .projects-section {
+        margin-top: 25px !important;
+    }
+    
+    .experience-container {
+        margin-top: -50px !important;
+    }
     
 
 }

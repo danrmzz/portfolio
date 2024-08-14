@@ -421,3 +421,17 @@ nav {
     transform: scale(1.05);
 }
 
+/* Fade in */
+/* Initial state */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: adds a slight slide-up effect */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition for both opacity and transform */
+}
+
+/* Final state */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0px); /* Back to original position */
+}
+

@@ -38,3 +38,22 @@ document.querySelectorAll('.nav-link').forEach(link => {
       }
     });
   });
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.fade-in');
+  
+    function checkVisibility() {
+        const windowHeight = window.innerHeight;
+        elements.forEach(element => {
+            const position = element.getBoundingClientRect().top;
+            if (position < windowHeight - 100) { // Adjust 100 to control when the animation starts
+                element.classList.add('visible');
+            }
+        });
+    }
+  
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Initial check on load
+  });

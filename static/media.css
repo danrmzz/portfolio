@@ -36,6 +36,10 @@
 }
 
 @media (max-width: 767px) {
+
+    #experience {
+        scroll-margin-top: 10vh; /* Adjust this value as needed */
+    }
     .experience-container {
         flex-direction: column; /* Stack the sidebar and content vertically */
         align-items: center; /* Center align the items vertically */

@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    body, body::before {
+        background-attachment: scroll;
+    }
 
 
     .experience-content p, .experience-content ul {

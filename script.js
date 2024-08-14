@@ -58,7 +58,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     checkVisibility(); // Initial check on load
   });
 
-  // Add this script to your site, preferably just before the closing </body> tag
+// Add this script to your site, preferably just before the closing </body> tag
 
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
@@ -66,9 +66,18 @@ function isMobileDevice() {
 
 if (isMobileDevice()) {
     document.body.classList.add('black-background');
-}
 
-  if (/Mobi|Android/i.test(navigator.userAgent)) {
-            document.body.style.backgroundAttachment = 'fixed';
-            document.body.style.backgroundPosition = 'center';
+    // Change background attachment for body
+    document.body.style.backgroundAttachment = 'scroll';
+    document.body.style.backgroundPosition = 'center';
+
+    // Change background attachment for body::before
+    let bodyBefore = document.createElement('style');
+    bodyBefore.innerHTML = `
+        body::before {
+            background-attachment: scroll !important;
+            background-position: center !important;
         }
+    `;
+    document.head.appendChild(bodyBefore);
+}

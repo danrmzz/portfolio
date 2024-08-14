@@ -81,3 +81,57 @@
         margin-top: 40px !important; /* Add space above the list */
     }
 }
+
+
+@media (max-width: 440px) {
+
+    .name {
+        font-size: 500%;
+    }
+
+    .intro1, .intro2 {
+        font-size: 100%;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the project cards horizontally */
+        gap: 20px; /* Maintain spacing between the cards */
+    }
+
+    
+
+}
+
+
+@media (max-width: 350px) {
+    .name {
+        font-size: 400%;
+    }
+
+    .intro1, .intro2 {
+        font-size: 90%;
+    }
+
+    .headstarter-location{
+    
+        margin-top: -15px !important;
+    }
+
+    .headstarter-date{
+    
+        margin-top: 25px !important;
+    }
+
+}
+
+@media (max-width: 300px) { 
+
+
+}

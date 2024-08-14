@@ -196,6 +196,7 @@ nav {
 .experience-container {
     display: flex;
     height: 100vh;
+    flex-direction: row;
 }
 
 .sidebar {
@@ -280,6 +281,7 @@ nav {
 .experience-content {
     flex-grow: 1;
     padding: 40px;
+    position: relative;
 }
 
 .experience-detail {

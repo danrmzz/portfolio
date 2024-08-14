@@ -13,15 +13,16 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
 body::before {
     content: '';
     position: fixed; /* Fixed position to stay in place while scrolling */
-    top: -50px; /* Extend beyond viewport edges */
-    left: -50px; /* Extend beyond viewport edges */
-    right: -50px; /* Extend beyond viewport edges */
-    bottom: -50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url('../static/imgs/galaxy.gif');
     background-size: cover;
     background-repeat: no-repeat;

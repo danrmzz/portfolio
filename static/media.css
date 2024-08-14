@@ -1,7 +1,6 @@
 @media (max-width: 1200px) {
-
     body, body::before {
-        background-attachment: fixed !important;
+        background-attachment: scroll;
     }
 
 

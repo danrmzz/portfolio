@@ -57,3 +57,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility(); // Initial check on load
   });
+
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    document.body.style.backgroundAttachment = 'fixed';
+    document.body.style.backgroundPosition = 'center';
+}

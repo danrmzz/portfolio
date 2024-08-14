@@ -164,7 +164,7 @@ nav {
     position: absolute;
     bottom: -1px;
     left: 0px;
-    background-color: #4b80c5;
+    background-color: #4e59e9;
     width: 0%;
     height: 3px;
     transition: 0.4s ease-in-out;
@@ -175,7 +175,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: #76aef8 !important;
+    color: #6e76e6 !important;
 }
 
 .fa-solid {

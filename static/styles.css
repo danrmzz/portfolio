@@ -31,6 +31,11 @@ body::before {
     z-index: -1; /* Ensure it stays behind other content */
 }
 
+.black-background {
+    background-color: black !important;
+    background-image: none !important;
+}
+
 .main {
     position: relative;
     margin-top: 200px;

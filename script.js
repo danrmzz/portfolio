@@ -58,7 +58,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
     checkVisibility(); // Initial check on load
   });
 
-  if (/Mobi|Android/i.test(navigator.userAgent)) {
-    document.body.style.backgroundImage = 'none';
-    document.body.style.backgroundColor = '#000';
+// Add this script to your site, preferably just before the closing </body> tag
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+if (isMobileDevice()) {
+    document.body.classList.add('black-background');
 }

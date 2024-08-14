@@ -1,8 +1,10 @@
 @media (max-width: 1200px) {
 
-    body {
-        background-attachment: scroll;
+    body, body::before {
+        background-attachment: fixed !important;
     }
+
+
     .experience-content p, .experience-content ul {
         font-size: 90%;
     }

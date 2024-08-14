@@ -17,6 +17,10 @@
         scroll-margin-top: 25vh; /* Adjust this value as needed */
     }
 
+    .about-me {
+        margin-top: -130px;
+    }
+
     
 }
 

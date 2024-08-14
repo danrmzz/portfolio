@@ -442,3 +442,29 @@ nav {
     transform: translateY(0px); /* Back to original position */
 }
 
+.navbar-collapse li {
+    align-items: center;
+    text-align: center;
+    position: relative; /* Ensure the pseudo-element is positioned relative to the li */
+}
+
+.navbar-collapse .nav-link {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the nav-link */
+}
+
+.navbar-collapse .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #4e59e9;
+    width: 0%;
+    height: 3px;
+    transition: width 0.4s ease-in-out;
+}
+
+.navbar-collapse .nav-link:hover::after {
+    width: 100%; /* Expand the bar to the full width of the text on hover */
+}

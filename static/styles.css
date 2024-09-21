@@ -259,10 +259,12 @@ nav {
     cursor: pointer;
     color: #aaa;
     position: relative;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-    background-color: transparent; /* Initial background color */
-    width: 100%; /* Make the navbar items take up the full width */
-    box-sizing: border-box; /* Ensure padding is included within the width */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent; 
+    width: 100%; 
+    box-sizing: border-box;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
 }
 
 .navbar-item:hover, .navbar-item.active {

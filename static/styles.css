@@ -7,6 +7,28 @@ html, body {
 
 }
 
+/* Custom scrollbar styles for the entire webpage */
+html, body {
+    
+    scrollbar-color: #2c2c2c #000000; /* For Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background: #333; /* Background of the scrollbar track */
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+    border: 3px solid #333; /* Space around the scrollbar thumb */
+}
+
+
 body {
     position: relative;
     background-image: url('../static/imgs/galaxy.gif');

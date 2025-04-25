@@ -70,6 +70,7 @@ body::before {
 
 .intro1,
 .intro2 {
+  font-family: DM Sans;
   color: white;
   font-weight: 200;
   font-size: 20px;
@@ -239,9 +240,15 @@ nav {
 
 .experience-content h2,
 .experience-content p {
+  font-family: DM Sans;
   color: rgba(255, 255, 255, 0.945);
   font-weight: 300;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.experience-content li {
+  font-family: DM Sans;
+  font-size: large;
 }
 
 .experience-content h2 {
@@ -272,6 +279,7 @@ nav {
 }
 
 .navbar-item {
+  font-family: DM Sans;
   font-size: 20px;
   font-weight: 300;
   padding: 15px 20px;
@@ -344,13 +352,13 @@ nav {
   right: 4 !important;
 }
 
-.funspot {
+.knighthacks {
   width: 50px;
   height: auto;
   position: absolute !important;
-  bottom: 10 !important;
+  bottom: 6 !important;
   right: 4 !important;
-  border-radius: 0% !important;
+  border-radius: 50% !important;
 }
 
 #experience {

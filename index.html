@@ -85,11 +85,18 @@
       <div class="experience-container fade-in" id="experience">
         <div class="sidebar">
           <h2>Experience</h2>
+          <!-- Sidebar -->
           <div class="navbar-e">
             <div
               class="navbar-item active"
-              onclick="showExperience('headstarter')"
+              onclick="showExperience('knighthacks')"
             >
+              <img
+                src="static\imgs\knighthacks.png"
+                class="knighthacks"
+              />KnightHacks
+            </div>
+            <div class="navbar-item" onclick="showExperience('headstarter')">
               <img
                 src="static\imgs\headstarter.png"
                 class="company"
@@ -100,30 +107,52 @@
               <img src="static\imgs\mister.jpg" class="company" />Mister Car
               Wash
             </div>
-
-            <div class="navbar-item" onclick="showExperience('funspot')">
-              <img src="static\imgs\funspot.png" class="funspot" />Fun Spot
-            </div>
           </div>
         </div>
+
+        <!-- Content -->
         <div class="experience-content">
-          <div id="headstarter" class="experience-detail active">
+          <div id="knighthacks" class="experience-detail active">
+            <h2>Software Engineer</h2>
+            <p class="location">Orlando, FL</p>
+            <p class="date">February 2025 - Present</p>
+            <ul>
+              <li>
+                Collaborated with a team of 8 developers to build a hackathon
+                website <b>serving 1500+ students</b> and
+                <b>10+ company sponsors</b>.
+              </li>
+              <li>
+                Extended <b>Zod schemas</b> with custom logic to validate user
+                input including file type, size, and URLs, improving data
+                integrity.
+              </li>
+              <li>
+                Connected frontend form submission to a
+                <b>type-safe backend</b> using <b>tRPC mutations</b> to
+                streamline data flow and error handling.
+              </li>
+              <li>
+                Extended <b>Zod schemas</b> with custom logic to validate user
+                input including file type, size, and URLs, improving data
+                integrity
+              </li>
+            </ul>
+          </div>
+
+          <div id="headstarter" class="experience-detail">
             <h2>Software Engineering Fellow</h2>
             <p class="location">Remote</p>
             <p class="date">July 2024 - September 2024</p>
             <ul>
               <li>
-                Developed this <b>responsive</b> personal portfolio website
-                using <b>JavaScript</b> and <b>Bootstrap</b> to showcase
-                projects and technical skills
+                Developed this responsive personal portfolio website using
+                <b>JavaScript</b> and <b>Bootstrap</b> to showcase projects and
+                technical skills.
               </li>
               <li>
-                Networked with peers and industry professionals through virtual
-                meetups to gain valuable insights in the tech field
-              </li>
-              <li>
-                Participated in weekly peer led discussions and workshops to
-                further expand knowledge in AI and software engineering
+                Engaged in peer-led workshops to strengthen knowledge of
+                software engineering practices, workflows, and industry tools.
               </li>
             </ul>
           </div>
@@ -134,33 +163,12 @@
             <p class="date">June 2023 - Present</p>
             <ul>
               <li>
-                Provide clear, concise <b>technical advice</b> to significantly
-                enhance customer understanding and overall experience
-              </li>
-              <li>
                 Efficiently multitask in a <b>fast paced environment</b> to
-                ensure smooth, efficient operations for <b>100+ vehicles</b> per
-                hour
+                ensure smooth, efficient operations for 100+ vehicles per hour.
               </li>
               <li>
                 Collaborate with team members to <b>optimize workflows</b>,
-                improving service quality and workplace organization
-              </li>
-            </ul>
-          </div>
-
-          <div id="funspot" class="experience-detail">
-            <h2>Human Resources Intern</h2>
-            <p class="location">Orlando, FL</p>
-            <p class="date">June 2022 - July 2022</p>
-            <ul>
-              <li>
-                Managed data tracking for <b>200+ team members</b> and
-                onboarding processes for <b>76 new hires</b>
-              </li>
-              <li>
-                Performed detailed financial audits, identifying discrepancies
-                and recovering <b>over $100</b> in misplaced funds
+                improving service quality and workplace organization.
               </li>
             </ul>
           </div>
@@ -171,6 +179,32 @@
         <h2>Projects</h2>
 
         <div class="projects-grid">
+          <div class="project-card">
+            <img src="static\imgs\code_connections.jpg" alt="Project Image" />
+            <h3>Code Connections</h3>
+            <p>
+              Forum for students to build teams, share projects, post, and
+              collaborate.
+            </p>
+            <p class="langs">React - JavaScript - Firebase - CSS</p>
+            <a
+              href="https://code-connections.netlify.app/"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\paper-clip.png" />
+              Live demo
+            </a>
+            <a
+              href="https://github.com/HareshP31/Code_Connections"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\github.png" />
+              Github
+            </a>
+          </div>
+
           <div class="project-card">
             <img src="static\imgs\wiki2.jpg" alt="Project Image" />
             <h3>WikiParty</h3>
@@ -222,6 +256,15 @@
               data from screenshots.
             </p>
             <p class="langs">HTML - CSS - JavaScript - Tesseract</p>
+
+            <a
+              href="https://ftop-parser.vercel.app/"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\paper-clip.png" />
+              Live demo
+            </a>
 
             <a
               href="https://github.com/danrmzz/rankings-parser-tool"

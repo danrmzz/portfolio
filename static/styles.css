@@ -1,515 +1,501 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: Poppins !important;
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Poppins !important;
 }
 
-/* Custom scrollbar styles for the entire webpage */
-html, body {
-    
-    scrollbar-color: #2c2c2c #000000; /* For Firefox */
+html,
+body {
+  scrollbar-color: #2c2c2c #000000;
 }
 
-/* For WebKit browsers (Chrome, Safari, etc.) */
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px;
 }
 
-html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
-    background: #333; /* Background of the scrollbar track */
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #333;
 }
 
-html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners of the scrollbar thumb */
-    border: 3px solid #333; /* Space around the scrollbar thumb */
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #333;
 }
-
 
 body {
-    position: relative;
-    background-image: url('../static/imgs/galaxy.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+  position: relative;
+  background-image: url("../static/imgs/galaxy.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body::before {
-    content: '';
-    position: fixed; /* Fixed position to stay in place while scrolling */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../static/imgs/galaxy.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: blur(5px);
-    z-index: -1; /* Ensure it stays behind other content */
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../static/imgs/galaxy.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(5px);
+  z-index: -1;
 }
 
 .black-background {
-    background-color: black !important;
-    background-image: none !important;
+  background-color: black !important;
+  background-image: none !important;
 }
 
 .main {
-    position: relative;
-    margin-top: 200px;
-    height: 100vh;
-    
+  position: relative;
+  margin-top: 200px;
+  height: 100vh;
 }
 
 .about-me {
-    margin-bottom: 75px;
+  margin-bottom: 75px;
 }
 
-
-.intro1, .intro2 {
-    color: white;
-    font-weight: 200;
-    font-size: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.intro1,
+.intro2 {
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .name {
-    font-size: 100px;
-    font-weight: 500;
-    background: linear-gradient(to right, #975fff, #625fff, #5fb7ff, #5fdfff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  font-weight: 500;
+  background: linear-gradient(to right, #975fff, #625fff, #5fb7ff, #5fdfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-border-button-1 {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    background-color: black; /* Black background */
-    border-radius: 10px; /* Rounded corners */
-    border: 2px solid transparent; /* Border that will be filled by gradient */
-    background-image: linear-gradient(black, black), linear-gradient(45deg, #755de2, #3981e6);
-    background-origin: border-box;
-    background-clip: padding-box, border-box; /* Clip background to show gradient border */
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-top: 17px;
-    transition: all 0.1s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(black, black),
+    linear-gradient(45deg, #755de2, #3981e6);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 17px;
+  transition: all 0.1s ease-in-out;
 }
 
 .gradient-border-button-2 {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    background-color: black; /* Black background */
-    border-radius: 10px; /* Rounded corners */
-    border: 2px solid transparent; /* Border that will be filled by gradient */
-    background-image: linear-gradient(black, black), linear-gradient(45deg, #3981e6, #755de2);
-    background-origin: border-box;
-    background-clip: padding-box, border-box; /* Clip background to show gradient border */
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-top: 17px;
-    transition: all 0.1s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(black, black),
+    linear-gradient(45deg, #3981e6, #755de2);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 17px;
+  transition: all 0.1s ease-in-out;
 }
 
 .gradient-border-button-3 {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-image: linear-gradient(black, black), linear-gradient(45deg, #755de2, #3981e6);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-top: 17px;
-    transition: all 0.1s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(black, black),
+    linear-gradient(45deg, #755de2, #3981e6);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 17px;
+  transition: all 0.1s ease-in-out;
 }
+
 .gradient-border-button-1 img,
 .gradient-border-button-2 img,
 .gradient-border-button-3 img {
-    margin-right: 10px;
-    height: 24px;
+  margin-right: 10px;
+  height: 24px;
 }
 
-
-.gradient-border-button-1:hover, .gradient-border-button-2:hover, .gradient-border-button-3:hover {
-
-    transform: scale(1.05);
+.gradient-border-button-1:hover,
+.gradient-border-button-2:hover,
+.gradient-border-button-3:hover {
+  transform: scale(1.05);
 }
 
 .buttons {
-    margin-bottom: 300px;
+  margin-bottom: 300px;
 }
 
-/* Navbar */
-
 .narbar {
-    padding: 15px 18px !important;
+  padding: 15px 18px !important;
 }
 
 nav {
-    padding-top: 20px !important;
+  padding-top: 20px !important;
 }
 
-
-
 .logo {
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.848) !important;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.848) !important;
 }
 
 .nav-item {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 
 .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.92) !important;
-    font-size: 14px;
-    font-weight: 300;
-    position: relative;
-    
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
 }
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-    background-color: #4e59e9;
-    width: 0%;
-    height: 3px;
-    transition: 0.4s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  background-color: #4e59e9;
+  width: 0%;
+  height: 3px;
+  transition: 0.4s ease-in-out;
 }
 
 .nav-item:hover .nav-link::after {
-    width: 100%;
+  width: 100%;
 }
 
 .nav-link:hover {
-    color: #6e76e6 !important;
+  color: #6e76e6 !important;
 }
 
 .fa-solid {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-/* Experiences */
-
 .experience-container {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
 }
 
 .sidebar {
-    width: 300px; /* Fixed sidebar width */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
 .sidebar h2 {
-    font-weight: 200;
-    margin: 0;
-    padding-bottom: 20px;
-    font-size: 30px;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 200;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.experience-content h2, .experience-content p {
-    color: rgba(255, 255, 255, 0.945);
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+.experience-content h2,
+.experience-content p {
+  color: rgba(255, 255, 255, 0.945);
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .experience-content h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .location {
-    color: #3981e6 !important;
-    margin-bottom: 20px !important;
-    font-style: italic;
+  color: #3981e6 !important;
+  margin-bottom: 20px !important;
+  font-style: italic;
 }
 
 .navbar-e {
-    position: relative;
-    flex-grow: 1;
+  position: relative;
+  flex-grow: 1;
 }
 
 .navbar-e:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 2px;
-    height: 180px;
-    background-color: #555;
-    transition: all 0.3s ease; /* Smooth transition */
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 180px;
+  background-color: #555;
+  transition: all 0.3s ease;
 }
 
 .navbar-item {
-    font-size: 20px;
-    font-weight: 300;
-    padding: 15px 20px;
-    cursor: pointer;
-    color: #aaa;
-    position: relative;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: transparent; 
-    width: 100%; 
-    box-sizing: border-box;
-    border-top-right-radius: 5px; 
-    border-bottom-right-radius: 5px; 
+  font-size: 20px;
+  font-weight: 300;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #aaa;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.navbar-item:hover, .navbar-item.active {
-    color: rgba(255, 255, 255, 0.925);
-    background-color: #33333373; /* Gray background on hover/click */
+.navbar-item:hover,
+.navbar-item.active {
+  color: rgba(255, 255, 255, 0.925);
+  background-color: #33333373;
 }
 
 .navbar-item.active:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #fff;
-    transition: top 0.3s ease, bottom 0.3s ease; /* Smooth transition */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #fff;
+  transition: top 0.3s ease, bottom 0.3s ease;
 }
 
 .experience-content {
-    flex-grow: 1;
-    padding: 40px;
-    position: relative;
+  flex-grow: 1;
+  padding: 40px;
+  position: relative;
 }
 
 .experience-detail {
-    display: none;
-    position: relative;
-    
+  display: none;
+  position: relative;
 }
 
 .experience-detail.active {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 
-.experience-container ul, .experience-container li {
-    color: rgba(255, 255, 255, 0.932) !important;
-    font-weight: 200 !important;
-    margin-bottom: 15px !important;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+.experience-container ul,
+.experience-container li {
+  color: rgba(255, 255, 255, 0.932) !important;
+  font-weight: 200 !important;
+  margin-bottom: 15px !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
 .date {
-    color: #b3b3b3 !important;
-    font-size: 16px !important;
-    position: absolute !important; /* Position the date absolutely within the parent container */
-    top: 0 !important; /* Align to the top */
-    right: 0 !important; /* Align to the right */
-
+  color: #b3b3b3 !important;
+  font-size: 16px !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
 }
 
 .company {
-    border-radius: 50%;
-    width: 50px;
-    height: auto;
-    position: absolute !important; /* Position the date absolutely within the parent container */
-    bottom: 6 !important; /* Align to the top */
-    right: 4 !important; /* Align to the right */
-    
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+  position: absolute !important;
+  bottom: 6 !important;
+  right: 4 !important;
 }
 
 .funspot {
-    width: 50px;
-    height: auto;
-    position: absolute !important; /* Position the date absolutely within the parent container */
-    bottom: 10 !important; /* Align to the top */
-    right: 4 !important; /* Align to the right */
-    border-radius: 0% !important;
-
+  width: 50px;
+  height: auto;
+  position: absolute !important;
+  bottom: 10 !important;
+  right: 4 !important;
+  border-radius: 0% !important;
 }
 
 #experience {
-    scroll-margin-top: 30vh; /* Adjust this value as needed */
+  scroll-margin-top: 30vh;
 }
 
-/* Projects */
-
 .projects-section {
-    margin-top: -320px;
-    padding: 50px;
-    background-color: #00000000;
-    color: #fff;
-    text-align: center;
+  margin-top: -320px;
+  padding: 50px;
+  background-color: #00000000;
+  color: #fff;
+  text-align: center;
 }
 
 .projects-section h2 {
-    font-size: 30px;
-    font-weight: 200;
-    margin-bottom: 40px;
-    color: #ffffffe8;
-    text-align: left !important;
-    
-    
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 40px;
+  color: #ffffffe8;
+  text-align: left !important;
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .project-card {
-    background-color: #00000036;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s;
+  background-color: #00000036;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s;
 }
 
-
 .project-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .project-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .project-card h3 {
-    font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .project-card p {
-    font-size: 14px;
-    color: #aaa;
-    margin-bottom: 15px;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
 }
 
 .langs {
-    color: #6d39e6 !important;
+  color: #6d39e6 !important;
 }
 
 .live-demo-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 300;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-image: linear-gradient(black, black), linear-gradient(45deg, #755de2, #3981e6);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transition: all 0.1s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(black, black),
+    linear-gradient(45deg, #755de2, #3981e6);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.1s ease-in-out;
 }
-.live-demo-button img{
-    margin: 0px;
-    width: 18px !important;
-    height: auto !important;
-    margin-right: 10px;
-    border-radius: 0px !important;
+
+.live-demo-button img {
+  margin: 0px;
+  width: 18px !important;
+  height: auto !important;
+  margin-right: 10px;
+  border-radius: 0px !important;
 }
 
 .live-demo-button:hover {
-
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-/* Fade in */
-/* Initial state */
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px); /* Optional: adds a slight slide-up effect */
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition for both opacity and transform */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Final state */
 .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0px); /* Back to original position */
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .navbar-collapse li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative; /* Ensure the pseudo-element is positioned relative to the li */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 .navbar-collapse .nav-link {
-    position: relative; /* Ensure the pseudo-element is positioned relative to the nav-link */
+  position: relative;
 }
 
 .navbar-collapse .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: #4e59e9;
-    width: 0%;
-    height: 3px;
-    transition: width 0.4s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #4e59e9;
+  width: 0%;
+  height: 3px;
+  transition: width 0.4s ease-in-out;
 }
 
 .navbar-collapse .nav-link:hover::after {
-    width: 100%; /* Expand the bar to the full width of the text on hover */
+  width: 100%;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 .navbar-toggler {
-    border-color: rgb(150, 150, 150) !important; /* Set the border color to white */
-
+  border-color: rgb(150, 150, 150) !important;
 }
 
 .navbar-toggler:hover {
-    border-color: #dfdfdf !important;
+  border-color: #dfdfdf !important;
 }

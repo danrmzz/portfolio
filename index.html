@@ -1,220 +1,281 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Ramirez</title>
+    <link rel="icon" type="image/png" href="static\imgs\favicon.ico" />
+    <link rel="stylesheet" href="static\styles.css" />
+    <link rel="stylesheet" href="static\media.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c729db828.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Ramirez</title>
-  <link rel="icon" type="image/png" href="static\imgs\favicon.ico">
-  <link rel="stylesheet" href="static\styles.css">
-  <link rel="stylesheet" href="static\media.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src='https://kit.fontawesome.com/4c729db828.js' crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand logo text-uppercase" href="#">daniel ramirez</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container main fade-in">
-    <div class="about-me">
-      <p class="intro1">Hey, I'm</p>
-      <p class="name">Daniel Ramirez</p>
-      <p class="intro2">Welcome to my portfolio! My name is Daniel Ramirez, and I'm a student at the University of Central Florida pursuing a Bachelor's degree in Computer Science. I'm interested in software engineering, specifically web development, with a focus on building innovative solutions that can make a positive impact on lives around the world.</p>
-    </div>
-
-    <div class="buttons">
-      <a href="https://www.linkedin.com/in/danrmzz/" target="_blank" class="gradient-border-button-1">
-        <img src="static\imgs\linkedin.png">
-        LinkedIn
-      </a>
-      <a href="https://github.com/danrmzz" target="_blank" class="gradient-border-button-2">
-        <img src="static\imgs\github.png">
-        Github
-      </a>
-      <a href="resume.pdf" target="_blank" class="gradient-border-button-3">
-        <img src="static\imgs\resume.png">
-        Resume
-      </a>
-    </div>
-
-
-
-
-    <div class="experience-container fade-in" id="experience">
-      <div class="sidebar">
-        <h2>Experience</h2>
-        <div class="navbar-e">
-
-          <div class="navbar-item active" onclick="showExperience('headstarter')"><img src="static\imgs\headstarter.png" class="company">Headstarter AI</div>
-
-          <div class="navbar-item" onclick="showExperience('mister')"><img src="static\imgs\mister.jpg" class="company">Mister Car Wash</div>
-
-          <div class="navbar-item" onclick="showExperience('funspot')"><img src="static\imgs\funspot.png" class="funspot">Fun Spot</div>
-
-          
-
-          
-
-        </div>
-          
-      </div>
-      <div class="experience-content">
-
-        <div id="headstarter" class="experience-detail active">
-          <h2>Software Engineering Fellow</h2>
-          <p class="location">Remote</p>
-          <p class="date">July 2024 - September 2024</p>
-          <ul>
-            <li>Developed this <b>responsive</b> personal portfolio website using <b>JavaScript</b> and <b>Bootstrap</b> to showcase projects and technical skills</li>
-            <li>Networked with peers and industry professionals through virtual meetups to gain valuable insights in the tech field</li>
-            <li>Participated in weekly peer led discussions and workshops to further expand knowledge in AI and software engineering</li>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo text-uppercase" href="#">daniel ramirez</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
           </ul>
         </div>
-        
-        <div id="mister" class="experience-detail">
-          <h2>Guest Service Specialist</h2>
-          <p class="location">Orlando, FL</p>
-          <p class="date">June 2023 - Present</p>
-          <ul>
-            <li>Provide clear, concise <b>technical advice</b> to significantly enhance customer understanding and
-              overall experience</li>
-            <li>Efficiently multitask in a <b>fast paced environment</b> to ensure smooth, efficient operations for
-              <b>100+ vehicles</b> per hour</li>
-            <li>Collaborate with team members to <b>optimize workflows</b>, improving service quality and workplace
-              organization</li>
-          </ul>
+      </div>
+    </nav>
+
+    <div class="container main fade-in">
+      <div class="about-me">
+        <p class="intro1">Hey, I'm</p>
+        <p class="name">Daniel Ramirez</p>
+        <p class="intro2">
+          Welcome to my portfolio! My name is Daniel Ramirez, and I'm a student
+          at the University of Central Florida pursuing a Bachelor's degree in
+          Computer Science. I'm interested in software engineering, specifically
+          web development, with a focus on building innovative solutions that
+          can make a positive impact on lives around the world.
+        </p>
+      </div>
+
+      <div class="buttons">
+        <a
+          href="https://www.linkedin.com/in/danrmzz/"
+          target="_blank"
+          class="gradient-border-button-1"
+        >
+          <img src="static\imgs\linkedin.png" />
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/danrmzz"
+          target="_blank"
+          class="gradient-border-button-2"
+        >
+          <img src="static\imgs\github.png" />
+          Github
+        </a>
+        <a href="resume.pdf" target="_blank" class="gradient-border-button-3">
+          <img src="static\imgs\resume.png" />
+          Resume
+        </a>
+      </div>
+
+      <div class="experience-container fade-in" id="experience">
+        <div class="sidebar">
+          <h2>Experience</h2>
+          <div class="navbar-e">
+            <div
+              class="navbar-item active"
+              onclick="showExperience('headstarter')"
+            >
+              <img
+                src="static\imgs\headstarter.png"
+                class="company"
+              />Headstarter AI
+            </div>
+
+            <div class="navbar-item" onclick="showExperience('mister')">
+              <img src="static\imgs\mister.jpg" class="company" />Mister Car
+              Wash
+            </div>
+
+            <div class="navbar-item" onclick="showExperience('funspot')">
+              <img src="static\imgs\funspot.png" class="funspot" />Fun Spot
+            </div>
+          </div>
         </div>
+        <div class="experience-content">
+          <div id="headstarter" class="experience-detail active">
+            <h2>Software Engineering Fellow</h2>
+            <p class="location">Remote</p>
+            <p class="date">July 2024 - September 2024</p>
+            <ul>
+              <li>
+                Developed this <b>responsive</b> personal portfolio website
+                using <b>JavaScript</b> and <b>Bootstrap</b> to showcase
+                projects and technical skills
+              </li>
+              <li>
+                Networked with peers and industry professionals through virtual
+                meetups to gain valuable insights in the tech field
+              </li>
+              <li>
+                Participated in weekly peer led discussions and workshops to
+                further expand knowledge in AI and software engineering
+              </li>
+            </ul>
+          </div>
 
-        <div id="funspot" class="experience-detail">
-          <h2>Human Resources Intern</h2>
-          <p class="location">Orlando, FL</p>
-          <p class="date">June 2022 - July 2022</p>
-          <ul>
-            <li>Managed data tracking for <b>200+ team members</b> and onboarding processes for <b>76 new hires</b></li>
-            <li>Performed detailed financial audits, identifying discrepancies and recovering <b>over $100</b> in
-              misplaced funds</li>
-          </ul>
+          <div id="mister" class="experience-detail">
+            <h2>Guest Service Specialist</h2>
+            <p class="location">Orlando, FL</p>
+            <p class="date">June 2023 - Present</p>
+            <ul>
+              <li>
+                Provide clear, concise <b>technical advice</b> to significantly
+                enhance customer understanding and overall experience
+              </li>
+              <li>
+                Efficiently multitask in a <b>fast paced environment</b> to
+                ensure smooth, efficient operations for <b>100+ vehicles</b> per
+                hour
+              </li>
+              <li>
+                Collaborate with team members to <b>optimize workflows</b>,
+                improving service quality and workplace organization
+              </li>
+            </ul>
+          </div>
+
+          <div id="funspot" class="experience-detail">
+            <h2>Human Resources Intern</h2>
+            <p class="location">Orlando, FL</p>
+            <p class="date">June 2022 - July 2022</p>
+            <ul>
+              <li>
+                Managed data tracking for <b>200+ team members</b> and
+                onboarding processes for <b>76 new hires</b>
+              </li>
+              <li>
+                Performed detailed financial audits, identifying discrepancies
+                and recovering <b>over $100</b> in misplaced funds
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        
+      <div class="projects-section fade-in" id="projects">
+        <h2>Projects</h2>
 
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="static\imgs\wiki2.jpg" alt="Project Image" />
+            <h3>WikiParty</h3>
+            <p>
+              Multiplayer game where players race through Wikipedia pages using
+              hyperlinks.
+            </p>
+            <p class="langs">Python - PyQt5 - Wikipedia API</p>
+            <a
+              href="https://github.com/danrmzz/WikiParty"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\github.png" />
+              Github
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="static\imgs\car2.jpg" alt="Project Image" />
+            <h3>IntelliRoute AI</h3>
+            <p>AI powered traffic assistant optimizing routes in real time.</p>
+            <p class="langs">
+              Python - Flask - OpenAI API - TomTom Traffic API
+            </p>
+            <a
+              href="https://intelli-route-ai.vercel.app/"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\paper-clip.png" />
+              Live demo
+            </a>
+            <a
+              href="https://github.com/danrmzz/IntelliRoute-AI"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\github.png" />
+              Github
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="static\imgs\ftop_parser_img.jpg" alt="Project Image" />
+            <h3>Leaderboard Parser Tool</h3>
+            <p>
+              Allows you to extract, clean, and transfer in-game leaderboard
+              data from screenshots.
+            </p>
+            <p class="langs">HTML - CSS - JavaScript - Tesseract</p>
+
+            <a
+              href="https://github.com/danrmzz/rankings-parser-tool"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\github.png" />
+              Github
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="static\imgs\ticket.png" alt="Project Image" />
+            <h3>Ticket Queue Simulation</h3>
+            <p>
+              Ticket queue management system implemented with linked lists for
+              O(1) efficiency.
+            </p>
+            <p class="langs">C</p>
+            <a
+              href="https://github.com/danrmzz/ticket-queue-simulation"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\github.png" />
+              Github
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="static\imgs\portfolio.png" alt="Project Image" />
+            <h3>This Portfolio</h3>
+            <p>
+              Portfolio website to showcase my personal projects and experience.
+            </p>
+            <p class="langs">HTML - CSS - JavaScript - Bootstrap</p>
+            <a
+              href="https://github.com/danrmzz/galaxy-portfolio"
+              class="live-demo-button"
+              target="_blank"
+            >
+              <img src="static\imgs\github.png" />
+              Github
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-
-
-    <div class="projects-section fade-in" id="projects">
-      <h2>Projects</h2>
-
-      <div class="projects-grid">
-
-
-
-        <div class="project-card">
-          <img src="static\imgs\wiki2.jpg" alt="Project Image">
-          <h3>WikiParty</h3>
-          <p>Multiplayer game where players race through Wikipedia pages using hyperlinks.</p>
-          <p class="langs">Python - PyQt5 - Wikipedia API</p>
-          <a href="https://github.com/danrmzz/WikiParty" class="live-demo-button" target="_blank">
-            <img src="static\imgs\github.png">
-            Github
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="static\imgs\car2.jpg" alt="Project Image">
-          <h3>IntelliRoute AI</h3>
-          <p>AI powered traffic assistant optimizing routes in real time.</p>
-          <p class="langs">Python - Flask - OpenAI API - TomTom Traffic API</p>
-          <a href="https://intelli-route-ai.vercel.app/" class="live-demo-button" target="_blank">
-            <img src="static\imgs\paper-clip.png">
-            Live demo
-          </a>
-          <a href="https://github.com/danrmzz/IntelliRoute-AI" class="live-demo-button" target="_blank">
-            <img src="static\imgs\github.png">
-            Github
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="static\imgs\ftop_parser_img.jpg" alt="Project Image">
-          <h3>Leaderboard Parser Tool</h3>
-          <p>Allows you to extract, clean, and transfer in-game leaderboard data from screenshots.</p>
-          <p class="langs">HTML - CSS - JavaScript - Tesseract</p>
-        
-          <a href="https://github.com/danrmzz/rankings-parser-tool" class="live-demo-button" target="_blank">
-            <img src="static\imgs\github.png">
-            Github
-          </a>
-        </div>
-
-
-        <div class="project-card">
-          <img src="static\imgs\ticket.png" alt="Project Image">
-          <h3>Ticket Queue Simulation</h3>
-          <p>Ticket queue management system implemented with linked lists for O(1) efficiency.</p>
-          <p class="langs">C</p>
-          <a href="https://github.com/danrmzz/ticket-queue-simulation" class="live-demo-button" target="_blank">
-            <img src="static\imgs\github.png">
-            Github
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="static\imgs\portfolio.png" alt="Project Image">
-          <h3>This Portfolio</h3>
-          <p>Portfolio website to showcase my personal projects and experience.</p>
-          <p class="langs">HTML - CSS - JavaScript - Bootstrap</p>
-          <a href="https://github.com/danrmzz/galaxy-portfolio" class="live-demo-button" target="_blank">
-            <img src="static\imgs\github.png">
-            Github
-          </a>
-        </div>
-
-
-
-
-
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

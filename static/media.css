@@ -1,160 +1,145 @@
 @media (max-width: 1200px) {
+  .experience-content p,
+  .experience-content ul {
+    font-size: 90%;
+  }
 
+  .date {
+    font-size: 80% !important;
+  }
 
-    .experience-content p, .experience-content ul {
-        font-size: 90%;
-    }
+  .experience-content h2 {
+    font-size: 150% !important;
+  }
 
-    .date {
-        font-size: 80% !important;
-    }
+  #experience {
+    scroll-margin-top: 25vh;
+  }
 
-    .experience-content h2 {
-        font-size: 150% !important;
-    }
-
-    #experience {
-        scroll-margin-top: 25vh; /* Adjust this value as needed */
-    }
-
-    .about-me {
-        margin-top: -110px;
-    }
-
-    
+  .about-me {
+    margin-top: -110px;
+  }
 }
 
 @media (max-width: 991px) {
+  .experience-content p,
+  .experience-content ul {
+    font-size: 90%;
+  }
 
-    .experience-content p, .experience-content ul {
-        font-size: 90%;
-    }
+  .date {
+    font-size: 70% !important;
+    left: 0 !important;
+    top: 28 !important;
+  }
 
-    .date {
-        font-size: 70% !important;
-        left: 0 !important; 
-        top: 28 !important;
-
-    }
-
-    .experience-content h2 {
-        font-size: 130% !important;
-    }
-
+  .experience-content h2 {
+    font-size: 130% !important;
+  }
 }
 
 @media (max-width: 767px) {
+  .about-me {
+    margin-top: -130px;
+  }
 
-    .about-me {
-        margin-top: -130px;
-    }
+  #experience {
+    scroll-margin-top: 5vh;
+  }
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px !important;
+  }
 
-    #experience {
-        scroll-margin-top: 5vh; /* Adjust this value as needed */
-    }
-    .experience-container {
-        flex-direction: column; /* Stack the sidebar and content vertically */
-        align-items: center; /* Center align the items vertically */
-        margin-bottom: 250px !important;
-    }
+  .sidebar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-    .sidebar {
-        width: 100%; /* Full width for the sidebar */
-        margin: 0 auto; /* Center the sidebar */
-        padding: 20px; /* Add some padding */
-    }
+  .experience-content {
+    width: 100%;
+    padding: 20px;
+  }
 
-    .experience-content {
-        width: 100%; /* Full width for the experience content */
-        padding: 20px; /* Add some padding */
-    }
+  .experience-content h2 {
+    font-size: 130% !important;
+  }
 
-    .experience-content h2 {
-        font-size: 130% !important;
-    }
+  .company {
+    width: 40px;
+    bottom: 6px !important;
+    right: 4px !important;
+  }
 
-    .company {
-        width: 40px;
-        bottom: 6px !important; /* Align to the bottom */
-        right: 4px !important; /* Align to the right */
-    }
+  .experience-content p,
+  .experience-content ul {
+    font-size: 80%;
+  }
 
-    .experience-content p, .experience-content ul {
-        font-size: 80%;
-    }
+  .headstarter-date,
+  .date {
+    font-size: 70% !important;
+    left: 0 !important;
+    top: 53px !important;
+  }
 
-    .headstarter-date, .date {
-        font-size: 70% !important;
-        left: 0 !important; 
-        top: 53px !important;
-    }
+  .location {
+    margin-top: -15px !important;
+  }
 
-    .location {
-        margin-top: -15px !important; /* Adjust margin-top to move the location down */
-    }
-
-    .experience-content ul {
-        margin-top: 40px !important; /* Add space above the list */
-    }
+  .experience-content ul {
+    margin-top: 40px !important;
+  }
 }
 
-
 @media (max-width: 440px) {
+  .name {
+    font-size: 500%;
+  }
 
-    .name {
-        font-size: 500%;
-    }
-
-    .intro1, .intro2 {
-        font-size: 100%;
-    }
-
-
+  .intro1,
+  .intro2 {
+    font-size: 100%;
+  }
 }
 
 @media (max-width: 400px) {
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .projects-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Center the project cards horizontally */
-        gap: 20px; /* Maintain spacing between the cards */
-    }
+  .projects-section {
+    margin-top: -120px !important;
+  }
 
-    .projects-section {
-        margin-top: -120px !important;
-    }
-    
-    .experience-container {
-        margin-top: -50px !important;
-    }
-    
-
+  .experience-container {
+    margin-top: -50px !important;
+  }
 }
-
 
 @media (max-width: 350px) {
-    .name {
-        font-size: 400%;
-    }
+  .name {
+    font-size: 400%;
+  }
 
-    .intro1, .intro2 {
-        font-size: 90%;
-    }
+  .intro1,
+  .intro2 {
+    font-size: 90%;
+  }
 
-    .headstarter-location{
-    
-        margin-top: -15px !important;
-    }
+  .headstarter-location {
+    margin-top: -15px !important;
+  }
 
-    .headstarter-date{
-    
-        margin-top: 25px !important;
-    }
-
+  .headstarter-date {
+    margin-top: 25px !important;
+  }
 }
 
-@media (max-width: 300px) { 
-
-
+@media (max-width: 300px) {
 }

@@ -273,7 +273,7 @@ nav {
   bottom: 0;
   left: 0;
   width: 2px;
-  height: 180px;
+  height: 120px;
   background-color: #555;
   transition: all 0.3s ease;
 }
